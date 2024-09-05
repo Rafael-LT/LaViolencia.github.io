@@ -1,0 +1,377 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 73, 191);
+    color: rgb(17, 17, 17);
+    margin: 0%;
+}
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+section img{
+    width:0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.primer-video video{
+    width: 90%;
+    height: 200%;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: 6.2%;
+}
+.primer-video :hover{
+    border: 5px solid #c88015;
+}
+
+
+.imagen-violencia {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imagen-violencia img {
+    max-width: 30%; 
+    height: auto;    
+    margin-left: 500px;
+    margin-top: 2%;
+    border-radius:15px;
+}
+.imagen-violencia img:hover{
+    border: 5px solid #5d045a;
+}
+.imagen-violencia-caratula {
+    
+    top: 0;
+    right: 0;
+}
+
+.imagen-violencia-caratula img {
+    max-width: 10%; 
+    height: auto;    
+    margin-left: 70px;
+    margin-top: 2%;
+    border-radius:50%;
+}
+.imagen-violencia-caratula img:hover{
+    border: 5px solid #18056d;
+}
+
+
+a{
+    color: rgb(211, 8, 8);
+    text-decoration: none;
+}
+
+h1 > a > span {
+    color: rgb(107, 13, 110);
+}   
+h1{
+    text-align:left;
+    font-weight: 800px;
+    font-size: 50px;
+    text-shadow: 
+    3px 3px 1px rgb(223, 46, 226),
+    8px 8px 4px rgb(255, 255, 255);
+}
+
+
+p.mensaje{
+    color: rgba(66, 11, 11, 0.66);
+    text-transform:uppercase;
+    letter-spacing: 0.4em;
+    
+}
+.texto {
+    background-color: rgb(88, 10, 88);
+    color: rgb(255, 255, 255);
+    text-align:left;
+}
+.texto ul{
+    position: relative;
+    height: 160px;
+    width: 60%;
+}
+.texto li {
+    position: absolute;
+    background-color: rgba(251, 0, 255, 0.24);
+    width: 140%;
+    height: 140px;
+    margin-top: 1.5%;
+    margin-left: -10%;
+}
+.sinviñeta{
+    list-style-type: none;
+    padding-left: 1;
+}
+
+.fila{
+    display: flex;
+    color: rgb(255, 255, 255);
+    background: #5d045a;
+}
+.fila ul{
+    background: rgba(251, 0, 255, 0.24);
+    margin-top: 1.5%;
+    margin-left: 1%;
+    list-style-type: none;
+    padding-left: 5px;
+}
+.boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton button {
+    background-color: #72129f; /* Color inicial del botón */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px; 
+}
+
+.boton button:hover {
+    background-color: #000000; 
+}
+
+.boton a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.boton a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+/* desde aqui sera la edicion de pag 1*/
+/*body*/
+.pag1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(38, 33, 130, 0.708);
+    color: rgb(7, 7, 7);
+    margin: 0%;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #5d045a;
+    height: 300PX;
+    width: 900px;
+}
+.tumba{
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+.tumba img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition:transform 0.3s ease;    
+    margin-top:30px;
+}
+.full-imagen{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: 300px;
+    z-index: 10;
+    text-align: center;
+}
+.tumba input[type="radio"] {
+    display: none;
+}
+.tumba input[type="radio"]:checked + label+ .full-imagen{
+    display: block;
+}
+.full-imagen img{
+    width: 100%;
+    height:auto;
+    
+    padding: 10px;
+    background-color: #5d045a;
+}
+.full-imagen p{
+    margin-top: 10px;
+    font-size: 24px;
+    color: aliceblue;
+    text-shadow: 
+    3px 3px 1px rgb(223, 46, 226),
+    8px 8px 4px rgb(255, 255, 255);
+    
+}
+
+.texto-pag1{
+    margin-top: 38%;
+    margin-left:15px;
+    margin-right: 15px;
+    background: #7d15c8;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.texto-pag1 p{
+    margin-top: 30px;
+    margin-left:30px;
+    margin-right: 30px;
+}
+
+
+.inicio-boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inicio-boton button {
+    background-color: #4d0a7d; /* Color inicial del botón */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px; 
+}
+
+.inicio-boton button:hover {
+    background-color: #000000; 
+}
+
+.inicio-boton a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.inicio-boton a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+ /* desde aqui esta la pag 2 */
+
+ /*desde aqui esta la pag 3*/
+
+ /* desde aqui esta la pag 4*/
+
+ /* desde aqui es la caratula*/
+
+    /*body*/
+   
+    .body-caratula {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        background-color: #1313b8;
+    }
+
+    .editor-de-caratula {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #1f2766;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(186, 64, 64, 0.1);
+    }
+
+    .images-caratula {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .images-caratula img {
+        max-width: 150px;
+        height: auto; 
+        border-radius: 50%;
+    }
+
+    .h1-caratula a {
+        margin: 10px 0;
+        color: #fffefd;
+    }
+
+    .nombres {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .nombres p {
+        margin: 5px 0;
+        font-size: 18px;
+        color: #fffefd;
+    }
+
+    .nombres a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .nombres a:hover {
+        text-decoration: underline;
+    }
+
+    .boton-caratula {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .boton-caratula button {
+        background-color: #0a137d; /* Color inicial del botón */
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 8px; 
+    }
+    
+    .boton-caratula button:hover {
+        background-color: #000000; 
+    }
+    
+    .boton-caratula a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .boton-caratula a:hover {
+        color: rgb(255, 255, 255); 
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
